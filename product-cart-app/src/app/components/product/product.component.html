@@ -1,0 +1,6 @@
+<div class="product" [ngClass]="setClasses()" [ngStyle]="setStyles()"> 
+  {{ product.name }} {{ product.color }} {{ product.size }} 
+  <input (change)="onToggle(product)" type="checkbox" />
+  <button (click)="onDelete(product)" class="del">x</button>
+  
+</div>

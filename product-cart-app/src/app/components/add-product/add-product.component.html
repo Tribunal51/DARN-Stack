@@ -1,0 +1,9 @@
+<form class="form" (ngSubmit)="onSubmit()">
+  <input type="text" name="name" [(ngModel)]="name" placeholder="Enter Name" /> 
+  <select [(ngModel)]="color" name="color"> 
+    <option *ngFor="let color of colors" value="{{color}}">{{ color }}</option>
+  </select> 
+  
+  <input type="number" name="size" [(ngModel)]="size" placeholder="Enter size" />
+  <input type="submit" value="Submit" class="btn" />
+</form> 
